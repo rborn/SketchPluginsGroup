@@ -1,0 +1,24 @@
+{
+  "name": "1️⃣页面生成文件夹Pages➡️Folders",
+  "description": "Sketch plugin that exports all the artboards of a Sketch file into folders, which are based on the pages of the Sketch file.",
+  "author": "Ivan Bozic",
+  "homepage": "http://github.com/ivanbozic/sketch-pages-to-folders",
+  "version": 1.0,
+  "identifier": "com.ivanbozic.sketch.pages-to-folders",
+  "compatibleVersion": 42,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "导出全部页面",
+      "identifier": "export-all",
+      "script": "export.js",
+      "handler": "exportAllPages"
+    }
+  ],
+  "menu": {
+    "title": "1️⃣页面生成文件夹Pages➡️Folders",
+    "items": [
+      "export-all"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "author" : "ZHANGXIN",
+  "commands" : [
+    {
+      "script" : "commands.js",
+      "handler" : "exportToFolder",
+      "name" : "Export to Folder",
+      "shortcut" : "cmd e",
+      "identifier" : "exportToFolder"
+    },
+    {
+      "script" : "commands.js",
+      "handler" : "exportToFolderAs",
+      "name" : "Export to Folder As...",
+      "shortcut" : "cmd alt e",
+      "identifier" : "exportToFolderAs"
+    }
+  ],
+  "menu": {
+    "isRoot": true,
+    "items": [
+      {
+        "title": "3⃣️切图工具Slicer",
+        "items": [
+          "exportToFolder",
+          "exportToFolderAs",
+          "do9patch"
+        ]
+      }
+    ]
+  },
+  "identifier" : "co.ozzik.slicer",
+  "version" : "0.4.3",
+  "description" : "Exporting life",
+  "authorEmail" : "hey@ozzik.co",
+  "name" : "切图工具Slicer"
+}

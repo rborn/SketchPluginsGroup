@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html>
+<head>
+	<style>
+		body,
+		html {
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			height: 90%;
+			background-color: rgb(236,236,236) !important;
+			font-family: "Helvetica"
+		}
+		body {
+			padding: 0 27px 0 27px;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+</head>
+
+<body>
+	<div>
+	<h2>你修改了什么?</h1>
+	<form>
+  修改内容: <br><input class="form-control" type="text" id="commit" placeholder="输入更新的内容"><br>
+	</form>
+	<form>
+	名字: <br><input class="form-control" type="text" id="username" placeholder="输入你的名字">
+	<input type="checkbox" name="default" value="saveAsDefault" id="rememberMe"> 记住该名字<br>
+	</form>
+	</div>
+	</body>
+	<script>
+		function getCommit(){
+			commit = document.getElementById('commit').value;
+			if (commit != "") {
+					return commit;
+			} else {
+				return "Updated the design"
+			}
+		};
+		function getUsername(){
+			username = document.getElementById('username').value;
+			if (username != "") {
+					return username;
+			} else {
+				return "A designer";
+			}
+		};
+		function rememberMe(){
+			if (document.getElementById('rememberMe').checked == true) {
+				return "true"
+			};
+		};
+		//disable enter on form
+		window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.keyIdentifier=='Enter'||e.keyCode==13){if(e.target.nodeName=='INPUT'&&e.target.type=='text'){e.preventDefault();return false;}}},true);
+		//focus onload
+		window.onload = function() {
+  		document.getElementById("commit").focus();
+		};
+	</script>
+	<!--Small trick to prevent caching of the script.js file-->
+	<script>document.write("<script type='text/javascript' src='script.js?v=" + Date.now() + "'><\/script>");</script>
+</html>

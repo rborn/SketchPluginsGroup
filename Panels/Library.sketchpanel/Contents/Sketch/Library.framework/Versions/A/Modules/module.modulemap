@@ -1,0 +1,6 @@
+framework module Library {
+  umbrella header "Library.h"
+
+  export *
+  module * { export * }
+}

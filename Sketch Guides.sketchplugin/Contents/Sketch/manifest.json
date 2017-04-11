@@ -1,0 +1,101 @@
+{
+    "name" : "2⃣️标注工具Sketch",
+    "description" : "Add Guides to edges and midpoints at once.",
+    "author": "Celyn Xie",
+    "authorEmail" : "celynxie@gmail.com",
+    "homepage": "http://celynxie.com",
+    "version": "1.0",
+    "identifier": "com.celyn.guide",
+    "commands" : [
+        {
+            "name": "启动工具栏",
+            "identifier": "controlBar",
+            "shortcut": "ctrl shift v",
+            "handler" : "controlBar",
+            "script": "guides.sketchscript"
+        },
+        {
+            "name": "顶部参考线",
+            "identifier": "topGuide",
+            "shortcut": "",
+            "handler" : "topGuide",
+            "script": "guides.sketchscript"
+        },
+        {
+            "name": "右侧参考线",
+            "identifier": "rightGuide",
+            "shortcut": "",
+            "handler" : "rightGuide",
+            "script": "guides.sketchscript"
+        },
+        {
+            "name": "底部参考线",
+            "identifier": "bottomGuide",
+            "shortcut": "",
+            "handler" : "bottomGuide",
+            "script": "guides.sketchscript"
+        },
+        {
+            "name": "左侧参考线",
+            "identifier": "leftGuide",
+            "shortcut": "",
+            "handler" : "leftGuide",
+            "script": "guides.sketchscript"
+        },
+        {
+            "name": "垂直居中参考线",
+            "identifier": "vCenterGuide",
+            "shortcut": "",
+            "handler" : "vCenterGuide",
+            "script": "guides.sketchscript"
+        },
+        {
+            "name": "水平居中参考线",
+            "identifier": "hCenterGuide",
+            "shortcut": "",
+            "handler" : "hCenterGuide",
+            "script": "guides.sketchscript"
+        },
+        {
+            "name": "顶底部参考线",
+            "identifier": "topBottomGuides",
+            "shortcut": "",
+            "handler" : "topBottomGuides",
+            "script": "guides.sketchscript"
+        },
+        {
+            "name": "左右侧参考线",
+            "identifier": "rightLeftGuides",
+            "shortcut": "",
+            "handler" : "rightLeftGuides",
+            "script": "guides.sketchscript"
+        },
+        {
+            "name": "删除所有参考线",
+            "identifier": "removeAllGuides",
+            "shortcut": "",
+            "handler" : "removeAllGuides",
+            "script": "guides.sketchscript"
+        }
+    ],
+    "menu" : {
+        "isRoot" : false,
+        "items" : [
+            "controlBar",
+            "-",
+            "topGuide",
+            "rightGuide",
+            "bottomGuide",
+            "leftGuide",
+            "-",
+            "vCenterGuide",
+            "hCenterGuide",
+            "-",
+            "topBottomGuides",
+            "rightLeftGuides",
+            "-",
+            "removeAllGuides",
+        ],
+        "title" : "2⃣️标注工具Sketch Guides"
+    },
+}

@@ -1,0 +1,107 @@
+{
+    "name": "Data",
+    "version": "1.0.0",
+    "identifier": "com.invisionlabs.data",
+    "order": 3,
+    "width": 270,
+    "height": 450,
+    "controllerClass": "ICDataPanelViewController",
+    "disableHeader": true,
+    "disableCocoaScriptPreprocessor": true,
+    "onboarding": {
+        "width": 225,
+        "height": 250,
+        "videoUrl": "https://player.vimeo.com/video/171412427"
+    },
+    "commands": [
+        {
+            "name": "Fill text",
+            "identifier": "fill-text",
+            "script": "commands.js",
+            "handler": "fillText"
+        },
+        {
+            "name": "Text Layers count",
+            "identifier": "text-layers-count",
+            "script": "commands.js",
+            "handler": "textLayersCount"
+        },
+        {
+            "name": "Open folder dialog",
+            "identifier": "open-folder-dialog",
+            "script": "commands.js",
+            "handler": "openFolderDialog"
+        },
+        {
+            "name": "Fill photo",
+            "identifier": "fill-photo",
+            "script": "commands.js",
+            "handler": "fillPhoto"
+        },
+        {
+            "name": "Folder",
+            "identifier": "fill-photo-folder",
+            "handler": "fillPhotoFolder",
+            "shortcut": "ctrl shift 1",
+            "script": "commands.js"
+        },
+        {
+            "name": "Dropbox Link",
+            "identifier": "fill-photo-dropbox",
+            "handler": "fillPhotoDropbox",
+            "shortcut": "ctrl shift 2",
+            "script": "commands.js"
+        },
+        {
+            "name": "Random Unsplash",
+            "identifier": "fill-photo-unsplash",
+            "handler": "fillPhotoUnsplash",
+            "shortcut": "ctrl shift 3",
+            "script": "commands.js"
+        },
+        {
+            "name": "Send values",
+            "identifier": "json-send-values",
+            "script": "commands.js",
+            "handler": "jsonSendValues"
+        },
+        {
+            "name": "Clear selected value",
+            "identifier": "json-clear-selected-value",
+            "script": "commands.js",
+            "handler": "jsonClearSelectedValue"
+        },
+        {
+            "name": "Update active fields",
+            "identifier": "json-update-active-fields",
+            "script": "commands.js",
+            "handler": "jsonUpdateActiveFields",
+            "runOnSelectionChange": true
+        },
+        {
+            "name": "Create new json",
+            "identifier": "new-json-file",
+            "script": "commands.js",
+            "handler": "newJSONFile"
+        },
+        {
+            "name": "Get JSON files",
+            "identifier": "get-json-files",
+            "script": "commands.js",
+            "handler": "getJSONFiles"
+        },
+        {
+            "name": "Choose file",
+            "identifier": "choose-file",
+            "script": "commands.js",
+            "handler": "chooseFile"
+        }
+    ],
+    "menu": {
+        "items": [
+            "fill-photo-folder",
+            "fill-photo-dropbox",
+            "fill-photo-unsplash"
+        ]
+    }
+}

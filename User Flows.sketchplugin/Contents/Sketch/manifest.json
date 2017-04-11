@@ -1,0 +1,188 @@
+{
+  "author" : "Aby Nimbalkar",
+  "commands" : [
+    {
+      "script" : "script.js",
+      "shortcut" : "cmd shift k",
+      "name" : "创建连接",
+      "identifier" : "defineLink",
+      "description" : "Select a layer\/group, select an artboard, then create a link between the two.",
+      "icon" : "icons\/addLink.png",
+      "handlers" : {
+        "run" : "defineLink"
+      }
+    },
+    {
+      "script" : "script.js",
+      "shortcut" : "cmd shift u",
+      "name" : "移除连接",
+      "identifier" : "removeLink",
+      "description" : "Remove a Link.",
+      "icon" : "icons\/removeLink.png",
+      "handlers" : {
+        "run" : "removeLink"
+      }
+    },
+    {
+      "script" : "script.js",
+      "shortcut" : "cmd shift d",
+      "name" : "添加\/编辑条件",
+      "identifier" : "addCondition",
+      "description" : "Add or Edit a condition in the current flow.",
+      "icon" : "icons\/editConditions.png",
+      "handlers" : {
+        "run" : "addCondition"
+      }
+    },
+    {
+      "script" : "script.js",
+      "shortcut" : "cmd shift f",
+      "name" : "生成流程图",
+      "identifier" : "generateFlow",
+      "description" : "Generate a flow diagram starting from a specific artboard.",
+      "icon" : "icons\/generateDiagram.png",
+      "handlers" : {
+        "run" : "generateFlow"
+      }
+    },
+    {
+      "script" : "script.js",
+      "shortcut" : "cmd shift r",
+      "handlers" : {
+        "run" : "updateFlow"
+      },
+      "identifier" : "updateFlow",
+      "description" : "Update the selected User Flow artboard.",
+      "icon" : "icons\/generateDiagram.png",
+      "name" : "更新流程图"
+    },
+    {
+      "script" : "script.js",
+      "shortcut" : "cmd shift 9",
+      "name" : "显示或重绘连线",
+      "identifier" : "showConnections",
+      "description" : "Show or redraw connections between link layers and destination artboards.",
+      "icon" : "icons\/redrawConnections.png",
+      "handlers" : {
+        "run" : "showConnections"
+      }
+    },
+    {
+      "script" : "script.js",
+      "shortcut" : "cmd shift 0",
+      "name" : "隐藏连线",
+      "identifier" : "hideConnections",
+      "description" : "Hide connections between link layers and destination artboards.",
+      "icon" : "icons\/hideConnections.png",
+      "handlers" : {
+        "run" : "hideConnections"
+      }
+    },
+    {
+      "script" : "script.js",
+      "shortcut" : "cmd shift .",
+      "name" : "转到目标画板",
+      "identifier" : "gotoDestinationArtboard",
+      "description" : "Go to the artboard linked to this layer.",
+      "icon" : "icons\/gotoArtboard.png",
+      "handlers" : {
+        "run" : "gotoDestinationArtboard"
+      }
+    },
+    {
+      "script" : "script.js",
+      "shortcut" : "cmd shift ,",
+      "name" : "转到连接图层",
+      "identifier" : "goBackToLink",
+      "description" : "Navigate back to the link layer.",
+      "icon" : "icons\/gotoLinkLayer.png",
+      "handlers" : {
+        "run" : "goBackToLink"
+      }
+    },
+    {
+      "script" : "script.js",
+      "shortcut" : "cmd shift b",
+      "icon" : "icon.png",
+      "identifier" : "editArtboardDescription",
+      "description" : "Edit the description of the selected Artboard.",
+      "handlers" : {
+        "run" : "editArtboardDescription"
+      }
+    },
+    {
+      "script" : "script.js",
+      "shortcut" : "",
+      "handlers" : {
+        "run" : "editSettings"
+      },
+      "identifier" : "editSettings",
+      "description" : "Edit settings for User Flows.",
+      "name" : "设置...",
+      "icon" : "icon.png"
+    },
+    {
+      "script" : "script.js",
+      "shortcut" : "",
+      "allowsShortcut" : false,
+      "handlers" : {
+        "run" : "editShortcuts"
+      },
+      "identifier" : "editShortcuts",
+      "description" : "Edit keyboard shortcuts for User Flows.",
+      "name" : "键盘快捷键...",
+      "icon" : "icon.png"
+    },
+    {
+      "script" : "script.js",
+      "shortcut" : "",
+      "allowsShortcut" : false,
+      "handlers" : {
+        "run" : "editLanguage"
+      },
+      "identifier" : "editLanguage",
+      "description" : "Language setting for User Flows.",
+      "name" : "语言...",
+      "icon" : "icon.png"
+    },
+    {
+      "script" : "script.js",
+      "shortcut" : "",
+      "allowsShortcut" : false,
+      "icon" : "icon.png",
+      "identifier" : "checkForUpdates",
+      "name" : "检查更新...",
+      "handlers" : {
+        "run" : "checkForUpdates"
+      }
+    }
+  ],
+  "menu" : {
+    "items" : [
+      "defineLink",
+      "removeLink",
+      "addCondition",
+      "-",
+      "generateFlow",
+      "-",
+      "showConnections",
+      "hideConnections",
+      "-",
+      "gotoDestinationArtboard",
+      "goBackToLink",
+      "-",
+      "editSettings",
+      "editShortcuts",
+      "editLanguage",
+      "checkForUpdates"
+    ]
+  },
+  "compatibleVersion" : 4.1,
+  "disableCocoaScriptPreprocessor" : true,
+  "identifier" : "com.abynim.sketchplugins.userflows",
+  "version" : "2.0.2",
+  "description" : "从 Sketch 中的画板生成用户流程图表。",
+  "homepage" : "https:\/\/abynim.github.io\/UserFlows",
+  "authorEmail" : "abynimbalkar@gmail.com",
+  "name" : "1️⃣1️⃣流程图User Flows"
+}

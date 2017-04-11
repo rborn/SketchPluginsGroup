@@ -1,0 +1,6 @@
+framework module Sync {
+  umbrella header "Sync.h"
+
+  export *
+  module * { export * }
+}
